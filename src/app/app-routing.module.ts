@@ -5,7 +5,7 @@ import { QuestionListComponent } from './question-list/question-list.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
-  {path: '\question', component: QuestionListComponent},
+  {path: 'question', component: QuestionListComponent},
 ];
 
 @NgModule({

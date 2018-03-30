@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FetchQuestionService } from './../../app/fetch-question.service';
 
 @Component({
   selector: 'app-question-list',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _fetchQuestionService: FetchQuestionService) { }
 
   ngOnInit() {
+    this._fetchQuestionService.fetchQuestions('', '');
   }
 
 }
